@@ -37,9 +37,9 @@
 	* Note: pom.xml settings and testng.xml need to be updated if you wish to run on more than 2 devices at once.
 
 #####Execute TestNG Suite:
-	```
-	$ mvn -X clean test -U -Pappium-tests
-	```
+```
+$ mvn -X clean test -U -Pappium-tests
+```
 
 ### Advice/Troubleshooting
 1. It may be useful to use a Java IDE such as IntelliJ or Eclipse to help troubleshoot potential issues. 
