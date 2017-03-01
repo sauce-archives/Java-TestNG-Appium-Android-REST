@@ -38,7 +38,7 @@
 
 #####Execute TestNG Suite:
 ```
-$ mvn -X clean test -U -Pappium-tests
+$ mvn test -U -Pappium-tests
 ```
 
 ### Advice/Troubleshooting
