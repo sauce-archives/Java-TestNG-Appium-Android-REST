@@ -4,6 +4,7 @@ import com.saucelabs.example.util.ResultReporter;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,11 +49,16 @@ public class TestSetup {
         MobileElement buttonEquals = (MobileElement)(driver.findElement(By.id("net.ludeke.calculator:id/equal")));
         MobileElement resultField = (MobileElement)(driver.findElement(By.xpath("//android.widget.EditText[1]")));
 
+        driver.getScreenshotAs(OutputType.BASE64);
+
         /* Add two and two. */
         buttonTwo.click();
+        driver.getScreenshotAs(OutputType.BASE64);
         buttonPlus.click();
         buttonTwo.click();
+        driver.getScreenshotAs(OutputType.BASE64);
         buttonEquals.click();
+        driver.getScreenshotAs(OutputType.BASE64);
 
         /* Check if within given time the correct result appears in the designated field. */
         (new WebDriverWait(driver, 30)).until(ExpectedConditions.textToBePresentInElement(resultField, "4"));
