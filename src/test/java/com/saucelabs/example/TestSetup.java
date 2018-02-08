@@ -31,10 +31,10 @@ public class TestSetup {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("testobject_api_key", System.getenv("TESTOBJECT_API_KEY"));
+        capabilities.setCapability("testobject_api_key", "D7348099E5FC44458E807282AF87FDB4");
         capabilities.setCapability("testobject_device", device);
 
-        driver = new AndroidDriver(new URL("http://appium.testobject.com/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://us1.appium.testobject.com/wd/hub"), capabilities);
         reporter = new ResultReporter();
 
     }
