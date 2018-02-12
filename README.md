@@ -1,3 +1,5 @@
+## Note: This repo is no longer maintained.  Please visit https://github.com/saucelabs-rdc-sample-frameworks/RDC-Java-TestNG-Appium-Android-REST for up to date code.
+
 ## Java-TestNG-Appium-Android-REST
 
 >This code is presented as an example only, since your tests and testing environments may require specialized scripting. This information should be taken only as an
