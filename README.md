@@ -15,9 +15,10 @@
     $ brew install maven
     ```
 2. TestObject Credentials
-    * Add your TestObject API Key
+    * Add your TestObject API Key and Appium Endpoint you would like to run against
     ```
     $ export TESTOBJECT_API_KEY=<your project's api key>
+    $ export APPIUM_URL=<your preferred appium endpoint URL>
     ```
 
 3. Project Dependencies
